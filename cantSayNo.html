@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Just Say YES</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="coffee.gif" alt="coffeeArt" draggable="false">
+        <h2>Wanna go out for a cup of coffee?</h2>
+    </div>
+    <div class="button-container">
+        <button class="yes-btn" id="yes-btn">YES</button>
+        <button class="no-btn" id="no-btn">NO</button>
+    </div>
+
+    <script>
+        const noBtn = document.getElementById('no-btn');
+        const yesBtn = document.getElementById('yes-btn');
+
+        function alertMsg() {
+            alert('Just a fun project')
+        }
+
+        function repositionOnce() {
+            const screenWidth = window.innerWidth - 100; // Adjusted to fit the screen
+            const screenHeight = window.innerHeight - 100; // Adjusted to fit the screen
+
+            const randomX = Math.floor(Math.random() * screenWidth);
+            const randomY = Math.floor(Math.random() * screenHeight);
+
+            console.log(screenHeight,screenWidth)
+            console.log(randomX,randomY)
+
+            noBtn.style.position = 'absolute';
+            noBtn.style.left = `${randomX}px`;
+            noBtn.style.top = `${randomY}px`;
+
+        }
+
+        noBtn.addEventListener('mouseenter', repositionOnce);
+        yesBtn.addEventListener('click', alertMsg);
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+.container {
+    text-align: center;
+}
+
+.yes-btn{
+    height: 50px;
+    width: 140px;
+    border-radius: 10px;
+    background-color: #FF86E0;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.no-btn{
+    height: 50px;
+    width: 140px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: black;
+    border-color: #FF86E0;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.button-container{
+    text-align: center;
+    margin-top: 20px; /* Adjust the margin-top value as needed */
+}
